@@ -1,6 +1,6 @@
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ReportTemplate}[2018/12/15 (HEIA-FR) School of Engineering Fribourg - LaTeX Template (unofficial)]
+\ProvidesClass{ReportTemplate}[Remy Macherel, Master MSE Unofficial report template]
 
 % Passes all the received arguments to the article class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -204,8 +204,7 @@
         \end{minipage}
         \hfill
         %\vspace{3em}
-        \vfill{}
-        
+        \vfill{}     
         \begin{flushleft}
             Version: \@version
         \end{flushleft}
