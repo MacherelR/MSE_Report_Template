@@ -11,197 +11,6 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage[main=french,english]{babel}
 
-%% Confidentiel
-\DeclareOption{confidential}{
-  \def\@confidential{Confidentiel}
-}
-
-%% Instituts
-\DeclareOption{iide}{
-  \def\instituteacronym{IIDE}
-  \def\institutename{Institut Interdisciplinaire du Développement de l'Entreprise}
-}
-
-\DeclareOption{reds}{
-  \def\instituteacronym{REDS}
-  \def\institutename{Reconfigurable \& Embedded Digital Systems}
-}
-
-\DeclareOption{iai}{
-  \def\instituteacronym{IAI}
-  \def\institutename{Institut d'Automatisation Industrielle}
-}
-
-\DeclareOption{igt}{
-  \def\instituteacronym{IGT}
-  \def\institutename{Institut de Génie Thermique}
-}
-
-\DeclareOption{mei}{
-  \def\instituteacronym{MEI}
-  \def\institutename{Media Engineering Institute}
-}
-
-\DeclareOption{iict}{
-  \def\instituteacronym{IICT}
-  \def\institutename{Institut des Technologies de l'information et de la Communication}
-}
-
-\DeclareOption{insit}{
-  \def\instituteacronym{INSIT}
-  \def\institutename{Institut d'ingénierie du territoire}
-}
-
-\DeclareOption{iese}{
-  \def\instituteacronym{IESE}
-  \def\institutename{Institut d'Énergie et Systèmes Électroniques}
-}
-
-\DeclareOption{comatec}{
-  \def\instituteacronym{COMATEC}
-  \def\institutename{Institut de conception mécanique et technologie des matériaux}
-}
-
-\DeclareOption{comatec}{
-  \def\instituteacronym{COMATEC}
-  \def\institutename{Institut de conception mécanique et technologie des matériaux}
-}
-
-%% Orientations
-\DeclareOption{eai}{
-  \def\@orientation{Électronique et Automatisation industrielle}
-  \def\@department{TIN}
-  \def\@faculty{Génie Électrique}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{eem}{
-  \def\@orientation{Électronique embarquée et Mécatronique}
-  \def\@department{TIN}
-  \def\@faculty{Génie Électrique}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{en}{
-  \def\@orientation{Systèmes énergétiques}
-  \def\@department{TIN}
-  \def\@faculty{Génie Électrique}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{eba}{
-  \def\@orientation{Energétique du bâtiment}
-  \def\@department{TIN}
-  \def\@faculty{Energie et techniques environnementales}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{thi}{
-  \def\@orientation{Thermique industrielle}
-  \def\@department{TIN}
-  \def\@faculty{Energie et techniques environnementales}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{tho}{
-  \def\@orientation{Thermotronique}
-  \def\@department{TIN}
-  \def\@faculty{Energie et techniques environnementales}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{mi}{
-  \def\@orientation{Mécatronique}
-  \def\@department{TIN}
-  \def\@faculty{Microtechniques}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{mi}{
-  \def\@orientation{Mécatronique}
-  \def\@department{TIN}
-  \def\@faculty{Microtechniques}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{mi}{
-  \def\@orientation{Mécatronique}
-  \def\@department{TIN}
-  \def\@faculty{Microtechniques}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{gen}{
-  \def\@orientation{Génie de l'environnement}
-  \def\@department{EC+G}
-  \def\@faculty{Géomatique}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{ggt}{
-  \def\@orientation{Géomatique et gestion du territoire}
-  \def\@department{EC+G}
-  \def\@faculty{Géomatique}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{gci}{
-  \def\@orientation{Construction et infrastructures}
-  \def\@department{EC+G}
-  \def\@faculty{Géomatique}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{ie}{
-  \def\@orientation{Systèmes informatiques embarqués}
-  \def\@department{TIC}
-  \def\@faculty{Informatique et systèmes de communication}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{il}{
-  \def\@orientation{Informatique logicielle}
-  \def\@department{TIC}
-  \def\@faculty{Informatique et systèmes de communication}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{tr}{
-  \def\@orientation{Réseaux et systèmes}
-  \def\@department{TIC}
-  \def\@faculty{Informatique et systèmes de communication}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{id}{
-  \def\@orientation{Ingénierie des données}
-  \def\@department{TIC}
-  \def\@faculty{Informatique et systèmes de communication}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{ts}{
-  \def\@orientation{Sécurité informatique}
-  \def\@department{TIC}
-  \def\@faculty{Informatique et systèmes de communication}
-  \def\@field{Ingénierie}
-}
-
-\DeclareOption{ee}{
-  \def\@orientation{}
-  \def\@department{HEG}
-  \def\@faculty{Économie d'entreprise}
-  \def\@field{Économie d'entreprise}
-}
-
-\DeclareOption{igi}{
-  \def\@orientation{Qualité et performance industrrielles}
-  \def\@department{TIN}
-  \def\@faculty{Ingénierie et gestion industrielles}
-  \def\@field{Ingénierie}
-}
-\ProcessOptions
-
 
 \RequirePackage[fleqn]{amsmath}
 \RequirePackage[small,bf,textfont=it]{caption}
@@ -290,16 +99,12 @@ basicstyle=\footnotesize\sffamily}
 \def\teacher#1{\def\@teacher{#1}}
 \def\genre#1{\def\@genre{#1}}
 \def\field#1{\def\@field{#1}}
-\def\genre#1{\def\@genre{#1}}
-\def\female{female}
 \def\signature#1{\def\@signature{#1}}
 
 \def\printsignature{\includegraphics[width=4cm]{
   \assetsdir/\@signature.\graphicsExt}
 }
 
-\def\thesis#1{\def\@thesis{#1}}
-\def\endyear#1{\def\@endyear{#1}}
 
 %% Première page de couverture
 \renewcommand\maketitle{%
@@ -319,16 +124,11 @@ basicstyle=\footnotesize\sffamily}
 \sffamily
 {\usefont{T1}{lmss}{bx}{n}\huge\selectfont\@title\\\vspace{0.5em}
 \large{\@subtitle}\par}%
-\ifdefined\@confidential
 \vskip 5em%
-\textbf{\MakeUppercase{\@confidential}}
 \vskip 5em%
 \else
 \vskip 10em%
 \fi
-Département \@department\par
-Filière \@faculty\par
-Orientation \@orientation
 {\large
 \vskip 5em%
 \begin{tabular}[t]{c}%
@@ -337,57 +137,10 @@ Orientation \@orientation
 \vskip 1em%
 {\large \@date}%
 \vskip 4cm%
-Supervisé par :\\
-\@teacher\\
+
 \end{center}%
 \par%
 \vskip 1.5em%
-}
-
-% Preamble
-\newcommand{\preamblename}{Préambule}
-\newcommand\preamble{
-\chapter*{\preamblename}
-\addcontentsline{toc}{chapter}{\preamblename}
-
-Ce travail de Bachelor (ci-après \textbf{TB}) est réalisé en fin de cursus d'études, en vue de l'obtention du titre de Bachelor of Science HES-SO en \@field.
-
-En tant que travail académique, son contenu, sans préjuger de sa valeur, n'engage ni la responsabilité de l'auteur, ni celles du jury du travail de Bachelor et de l'École.
-
-Toute utilisation, même partielle, de ce TB doit être faite dans le respect du droit d'auteur.
-
-\vskip 4em%
-{\leftskip8cm\relax
-HEIG-VD \\
-Le Chef du Département\par
-\vfil
-}
-Yverdon-les-Bains, le \@date
-}
-
-% Abstract
-\newcommand{\abstractname}{Version Abrégée}
-\newenvironment{abstract}{
-  \chapter*{\abstractname}
-  \addcontentsline{toc}{chapter}{\abstractname}
-}
-
-% Authentification
-\newcommand{\authenticiationname}{Authentification}
-\newcommand{\authentification}{
-\chapter*{\authenticiationname}
-\addcontentsline{toc}{chapter}{\authenticiationname}
-Je soussigné\ifx\@genre\female e\fi, \@author, atteste par la présente avoir réalisé seul\ifx\@genre\female e\fi~ce travail et n'avoir utilisé aucune autre source que celles expressément mentionnées.
-\vfil
-{\leftskip9cm\relax\@author\par
-\ifdefined\@signature
-%\hspace{8cm}
-\printsignature
-
-\fi
-}
-\vfil
-Yverdon-les-Bains, le \@date
 }
 
 % Annexes

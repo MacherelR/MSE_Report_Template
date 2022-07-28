@@ -23,10 +23,22 @@ RUN apt-get install -y \
     texlive-xetex \
     texlive-extra-utils
 
+RUN apt-get install -y texlive-latex-extra
+RUN apt-get install -y python3-pygments
 # Draw.io for building figures
 RUN apt-get install -y libnotify4 libxss1 xdg-utils libsecret-1-0 libappindicator3-1 libgbm1 libasound2
-RUN wget https://github.com/jgraph/drawio-desktop/releases/download/v18.0.4/drawio-amd64-18.0.4.deb
-RUN dpkg -i drawio-amd*
+# RUN wget https://github.com/jgraph/drawio-desktop/releases/download/v19.0.3/draw.io-arm64-19.0.3.zip
+# RUN unzip draw.io-arm64-19.0.3.zip
+# RUN cd draw.io.app
+
+# RUN unzip drawio
+# RUN dpkg -i drawio-arm*
+# RUN apt-get install snapd -y
+# RUN source ~/.bashrc
+# RUN snap install drawio
+# RUN apt -y install wget curl
+# RUN curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest | grep browser_download_url | grep '\.deb' | cut -d '"' -f 4 | wget -i -
+# RUN apt -f install ./drawio-arm64-*.deb
 
 RUN apt-get install -y latexmk
 RUN apt-get install -y texlive-science

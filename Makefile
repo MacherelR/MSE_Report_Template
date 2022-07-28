@@ -3,7 +3,7 @@ LATEXMK=latexmk
 INKSCAPE=inkscape
 FIGDIR=assets/figures
 DRAWIO=drawio
-OUT=report
+OUT=main
 
 SVGS=$(wildcard $(FIGDIR)/*.svg)
 DIOS=$(wildcard $(FIGDIR)/*.drawio)
