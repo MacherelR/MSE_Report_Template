@@ -68,9 +68,6 @@
             citecolor = blue,
             anchorcolor = black]{hyperref}
 
-
-
-
 %% Code
 \usepackage[newfloat]{minted}
 \usemintedstyle{pastie}
@@ -127,7 +124,7 @@
 \pagestyle{fancy}
 \rhead{Master MSE}
 \makeatletter
-\lhead{Agostinelli Romain, Macherel Rémy, Vadon Thibaut}
+\lhead{Macherel Rémy}
 \makeatother
 
 
@@ -199,12 +196,9 @@
             {\large{Auteurs} \par}
             \@author\\
             \href{mailto:\@contact}{\@contact}\\
-            Agostinelli Romain \\
-            \href{mailto:romain.agostinelli@gmail.com}{romain.agostinelli@gmail.com}
         \end{minipage}
         \hfill
         %\vspace{3em}
-        \vfill{}     
         \begin{flushleft}
             Version: \@version
         \end{flushleft}
