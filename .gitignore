@@ -292,3 +292,5 @@ TSWLatexianTemp*
 *.py.pdf
 
 build/
+
+Ltex-extension/
