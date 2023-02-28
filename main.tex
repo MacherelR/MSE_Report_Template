@@ -1,44 +1,38 @@
-
 \documentclass{ReportTemplate}
-\usepackage{titlesec}
-\title{Report Template}
-\author{Macherel Rémy}
+
+\title{Your project's Title}
+\author{Your}
 \date{\today}
-\subtitle{Master MSE template report}
-\subsubtitle{}
+\subtitle{Subtitle}
+\subsubtitle{Project's report}
 \location{Fribourg,}
-\contact{remy.macherel@master.hes-so.ch}
+\contact{you@mail.com}
 \version{1.0}
-\titlespacing*{\chapter}{0pt}{-60pt}{20pt}
+
+
 \begin{document}
-\maketitlepage
+
+\maketitlepage{}
+
 \newpage
-\maketableofcontent
-\medskip
 
-\titleformat{\chapter}[display]
-{\Huge\bfseries}
-{}
-{0pt}
-{\thechapter.\ }
+\maketableofcontent{}
 
-\chapter{Introduction}
-Write a brief description of what the project consists of.
+\newpage
 
-
-\chapter{Chapter 1}
-\section{Section}
-Blabla
-\chapter{Chapter 2, example of figure}
+\section{Minted example}
+Minted example. Minted display options can be modified in the ReportTemplate.cls file.
+\begin{minted}{python}
+def foo():
+    return "bar"
+\end{minted}
+\subsection{Figure example}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{imageSources/PI-Expert-MM.png}
-    \caption{Mind Map (see also in annexes)}
+    \includegraphics[width=\textwidth]{imageSources/meme.jpg}
+    \caption{Mind Map}
     \label{fig:MindMap}
 \end{figure}
 
-salut
 
 \end{document}
-
-

@@ -1,6 +1,5 @@
-
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ReportTemplate}[Remy Macherel, Master MSE Unofficial report template]
+\ProvidesClass{ReportTemplate}[2018/12/15 (HEIA-FR) School of Engineering Fribourg - LaTeX Template (unofficial)]
 
 % Passes all the received arguments to the article class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -9,7 +8,7 @@
 \ProcessOptions \relax
 
 % This class is based on the article class
-\LoadClass{report}
+\LoadClass{article}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,15 +115,24 @@
 
 \RequirePackage[skins,breakable]{tcolorbox}
 
+%% Schematics
+\usepackage{amsmath,latexsym, tikz} 
+
+%% Algorithm and pseudocode
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
+\usepackage{amsmath}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                               HEADER AND FOOTER                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \pagestyle{fancy}
-\rhead{Master MSE}
+\rhead{MSc}
 \makeatletter
-\lhead{Macherel Rémy}
+\lhead{Your name (template line 135)}
 \makeatother
 
 
@@ -132,6 +140,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                    COMMANDS                                     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand*{\hreff}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
+
 \newcommand*{\captionsource}[2]{%
   \caption[{#1}]{%
     #1% 
@@ -193,15 +205,35 @@
         \end{center}
 
         \begin{minipage}[t]{3in}
-            {\large{Auteurs} \par}
+            {\large{Auteur :} \par}
+            \vspace{12pt}
             \@author\\
-            \href{mailto:\@contact}{\@contact}\\
+            \href{mailto:\@contact}{\@contact}
         \end{minipage}
         \hfill
-        %\vspace{3em}
+        \begin{minipage}[t]{1.7in}
+            {\large{Supervisors :} \par}
+            \vspace{12pt}
+            Supervisor's name \\
+            \href{supervisor mail}{supervisor@mail.com} \\
+        \end{minipage}
+        \vspace{1em}
+        %\vfill{}
+        
         \begin{flushleft}
             Version: \@version
         \end{flushleft}
+        
+        \begin{figure}[b]
+            \centering
+            % \begin{subfigure}[b]{0.4\textwidth}
+            %     \includegraphics[width=\textwidth]{img/HES_SO_Logo_RGB.png}
+            % \end{subfigure}
+            \hfill
+            \begin{subfigure}[b]{0.4\textwidth}
+                \includegraphics[width=\textwidth]{imageSources/master-logo.png}
+            \end{subfigure}
+        \end{figure}
 
     \end{titlepage}
 }
@@ -212,15 +244,14 @@
 \newenvironment{code}{\captionsetup{type=listing}}{}
 \SetupFloatingEnvironment{listing}{name=Code}
 
-
-% \renewtcblisting{minted}[3][]{
-% enhanced,
-% breakable,% Allow page breaks
-% listing engine=minted,
-% listing only,#1, title=#3, minted language=#2,
-% colbacktitle=mintedframe,      % Title background color
-% colframe=mintedframe,
-% sharp corners, top=0mm, bottom=0mm,
-% title code={\path[draw=mintedframe,dashed, fill=mintedbackground](title.south west)--(title.south east);},
-% frame code={\path[draw=mintedframe, fill=mintedbackground](frame.south west) rectangle (frame.north east);}
-% }
+%\renewtcblisting{minted}[3][]{
+%enhanced,
+%breakable,% Allow page breaks
+%listing engine=minted,
+%listing only,#1, title=#3, minted language=#2,
+%colbacktitle=mintedframe,      % Title background color
+%colframe=mintedframe,
+%sharp corners, top=0mm, bottom=0mm,
+%title code={\path[draw=mintedframe,dashed, fill=mintedbackground](title.south west)--(title.south east);},
+%frame code={\path[draw=mintedframe, fill=mintedbackground](frame.south west) rectangle (frame.north east);}
+%}
